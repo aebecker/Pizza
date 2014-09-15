@@ -15,7 +15,7 @@ BOOL extraLogging = NO; // default = off
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    extraLogging = YES;
+//    extraLogging = YES;
     
     return YES;
 }

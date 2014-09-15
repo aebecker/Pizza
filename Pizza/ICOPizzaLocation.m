@@ -12,12 +12,13 @@
 
 #import "ICOViewController.h"
 
+// Test in your browser...
 // https://api.foursquare.com/v2/venues/search?client_id=MSB3H0C14BLRSSAAYGELVLAAWVKWUL5DXYVMWF2UJPUVZOMC&client_secret=ZSDRDRBEZHO4DUH5TWS2DQMOUP1MMBBMEZJBNDZZVXTUFZX1&v=20130815&ll=40.7,-74&query=pizza
 
 @interface ICOPizzaLocation () <NSURLConnectionDelegate>
 
-@property(nonatomic, strong) NSMutableData *receivedData;
-@property(nonatomic, strong) NSDictionary *JSONDictionary;
+@property(nonatomic, strong) NSMutableData *receivedData; // from Four Square
+@property(nonatomic, strong) NSDictionary *JSONDictionary; // Parsed JSON data into NSDictionary
 
 @end
 

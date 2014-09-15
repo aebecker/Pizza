@@ -67,6 +67,7 @@
     
 }
 
+// Once we've got a bunch, turn it off
 - (void)locationManager:(CLLocationManager *)manager
 	 didUpdateLocations:(NSArray *)locations {
     if(extraLogging)NSLog(@"[%@ %@] %@", [self class], NSStringFromSelector(_cmd), locations);

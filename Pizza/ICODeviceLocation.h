@@ -5,6 +5,8 @@
 //  Created by Tony Becker on 9/2/14.
 //  Copyright (c) 2014 Tony Becker. All rights reserved.
 //
+//  Utility Singleton to manage user location
+// Not used - MapKit Does it all
 
 #import <Foundation/Foundation.h>
 
