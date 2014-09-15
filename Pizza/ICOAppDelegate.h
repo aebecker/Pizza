@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+extern BOOL extraLogging; // default = off
+
 @interface ICOAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

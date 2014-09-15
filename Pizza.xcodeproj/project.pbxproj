@@ -21,6 +21,13 @@
 		EAEB312B19B61B0400B2A250 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEB310D19B61B0300B2A250 /* UIKit.framework */; };
 		EAEB313319B61B0400B2A250 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAEB313119B61B0400B2A250 /* InfoPlist.strings */; };
 		EAEB313519B61B0400B2A250 /* PizzaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEB313419B61B0400B2A250 /* PizzaTests.m */; };
+		EAEB313F19B61B3700B2A250 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEB313E19B61B3700B2A250 /* MapKit.framework */; };
+		EAEB314219B61C5700B2A250 /* ICOPizzaLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEB314119B61C5700B2A250 /* ICOPizzaLocation.m */; };
+		EAEB314519B61D4800B2A250 /* ICODeviceLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEB314419B61D4800B2A250 /* ICODeviceLocation.m */; };
+		EAEB314719B6227900B2A250 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEB314619B6227900B2A250 /* CoreLocation.framework */; };
+		EAEB314A19B63CC100B2A250 /* ICOPizzaAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEB314919B63CC100B2A250 /* ICOPizzaAnnotation.m */; };
+		EAEB314E19B65EE400B2A250 /* ICODirectionsPopupTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAEB314C19B65EE400B2A250 /* ICODirectionsPopupTableViewController.m */; };
+		EAEB314F19B65EE400B2A250 /* ICODirectionsPopupTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAEB314D19B65EE400B2A250 /* ICODirectionsPopupTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,17 @@
 		EAEB313019B61B0400B2A250 /* PizzaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PizzaTests-Info.plist"; sourceTree = "<group>"; };
 		EAEB313219B61B0400B2A250 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EAEB313419B61B0400B2A250 /* PizzaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PizzaTests.m; sourceTree = "<group>"; };
+		EAEB313E19B61B3700B2A250 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EAEB314019B61C5700B2A250 /* ICOPizzaLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICOPizzaLocation.h; sourceTree = "<group>"; };
+		EAEB314119B61C5700B2A250 /* ICOPizzaLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICOPizzaLocation.m; sourceTree = "<group>"; };
+		EAEB314319B61D4800B2A250 /* ICODeviceLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICODeviceLocation.h; sourceTree = "<group>"; };
+		EAEB314419B61D4800B2A250 /* ICODeviceLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICODeviceLocation.m; sourceTree = "<group>"; };
+		EAEB314619B6227900B2A250 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EAEB314819B63CC100B2A250 /* ICOPizzaAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICOPizzaAnnotation.h; sourceTree = "<group>"; };
+		EAEB314919B63CC100B2A250 /* ICOPizzaAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICOPizzaAnnotation.m; sourceTree = "<group>"; };
+		EAEB314B19B65EE400B2A250 /* ICODirectionsPopupTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICODirectionsPopupTableViewController.h; sourceTree = "<group>"; };
+		EAEB314C19B65EE400B2A250 /* ICODirectionsPopupTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICODirectionsPopupTableViewController.m; sourceTree = "<group>"; };
+		EAEB314D19B65EE400B2A250 /* ICODirectionsPopupTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ICODirectionsPopupTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAEB314719B6227900B2A250 /* CoreLocation.framework in Frameworks */,
 				EAEB310C19B61B0300B2A250 /* CoreGraphics.framework in Frameworks */,
 				EAEB310E19B61B0300B2A250 /* UIKit.framework in Frameworks */,
+				EAEB313F19B61B3700B2A250 /* MapKit.framework in Frameworks */,
 				EAEB310A19B61B0300B2A250 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +121,8 @@
 		EAEB310819B61B0300B2A250 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EAEB314619B6227900B2A250 /* CoreLocation.framework */,
+				EAEB313E19B61B3700B2A250 /* MapKit.framework */,
 				EAEB310919B61B0300B2A250 /* Foundation.framework */,
 				EAEB310B19B61B0300B2A250 /* CoreGraphics.framework */,
 				EAEB310D19B61B0300B2A250 /* UIKit.framework */,
@@ -119,6 +141,15 @@
 				EAEB311F19B61B0300B2A250 /* ICOViewController.m */,
 				EAEB312119B61B0300B2A250 /* Images.xcassets */,
 				EAEB311019B61B0300B2A250 /* Supporting Files */,
+				EAEB314019B61C5700B2A250 /* ICOPizzaLocation.h */,
+				EAEB314119B61C5700B2A250 /* ICOPizzaLocation.m */,
+				EAEB314319B61D4800B2A250 /* ICODeviceLocation.h */,
+				EAEB314419B61D4800B2A250 /* ICODeviceLocation.m */,
+				EAEB314819B63CC100B2A250 /* ICOPizzaAnnotation.h */,
+				EAEB314919B63CC100B2A250 /* ICOPizzaAnnotation.m */,
+				EAEB314B19B65EE400B2A250 /* ICODirectionsPopupTableViewController.h */,
+				EAEB314C19B65EE400B2A250 /* ICODirectionsPopupTableViewController.m */,
+				EAEB314D19B65EE400B2A250 /* ICODirectionsPopupTableViewController.xib */,
 			);
 			path = Pizza;
 			sourceTree = "<group>";
@@ -200,6 +231,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Tony Becker";
 				TargetAttributes = {
+					EAEB310519B61B0300B2A250 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					EAEB312619B61B0400B2A250 = {
 						TestTargetID = EAEB310519B61B0300B2A250;
 					};
@@ -229,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAEB314F19B65EE400B2A250 /* ICODirectionsPopupTableViewController.xib in Resources */,
 				EAEB312219B61B0300B2A250 /* Images.xcassets in Resources */,
 				EAEB311419B61B0300B2A250 /* InfoPlist.strings in Resources */,
 				EAEB311D19B61B0300B2A250 /* Main.storyboard in Resources */,
@@ -253,6 +292,10 @@
 				EAEB311A19B61B0300B2A250 /* ICOAppDelegate.m in Sources */,
 				EAEB311619B61B0300B2A250 /* main.m in Sources */,
 				EAEB312019B61B0300B2A250 /* ICOViewController.m in Sources */,
+				EAEB314A19B63CC100B2A250 /* ICOPizzaAnnotation.m in Sources */,
+				EAEB314519B61D4800B2A250 /* ICODeviceLocation.m in Sources */,
+				EAEB314E19B65EE400B2A250 /* ICODirectionsPopupTableViewController.m in Sources */,
+				EAEB314219B61C5700B2A250 /* ICOPizzaLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +423,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pizza/Pizza-Prefix.pch";
 				INFOPLIST_FILE = "Pizza/Pizza-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +437,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pizza/Pizza-Prefix.pch";
 				INFOPLIST_FILE = "Pizza/Pizza-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -457,6 +502,7 @@
 				EAEB313A19B61B0400B2A250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EAEB313B19B61B0400B2A250 /* Build configuration list for PBXNativeTarget "PizzaTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +511,7 @@
 				EAEB313D19B61B0400B2A250 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

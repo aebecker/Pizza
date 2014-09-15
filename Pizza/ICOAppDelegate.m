@@ -8,11 +8,15 @@
 
 #import "ICOAppDelegate.h"
 
+BOOL extraLogging = NO; // default = off
+
 @implementation ICOAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    extraLogging = YES;
+    
     return YES;
 }
 							

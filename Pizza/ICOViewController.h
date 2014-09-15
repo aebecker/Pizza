@@ -7,7 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface ICOViewController : UIViewController
+#import "ICOAppDelegate.h"
+#import "ICOPizzaAnnotation.h"
+
+@interface ICOViewController : UIViewController <MKMapViewDelegate, UIPopoverControllerDelegate>
+
+@property IBOutlet MKMapView *myMapView;
+
+
+// Add an Annotation (address) of Pizza Place
+-(void) addAnnotation:(ICOPizzaAnnotation *)annotation;
+// Show route to Pizza Place
+-(void) showRoute:(MKDirectionsResponse *)response;
+// Show directions to Pizza Place
+-(void) showDirections;
 
 @end
