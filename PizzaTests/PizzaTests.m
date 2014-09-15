@@ -45,12 +45,20 @@
     [pizzas find:region.center];
 
     // wait for it... Off of this thread 8-(
+    int limit = 300; // timeout varies, normally around 100
+    // Run the loop
+    while(_count <= 10 && limit > 0) {
+        NSLog(@"%s %d %d %d", __PRETTY_FUNCTION__, __LINE__, _count, limit);
+        limit--;
+        [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
+                                 beforeDate:[NSDate dateWithTimeIntervalSinceNow:0.1]]; // not really waiting this long...
+    }
     
-    XCTAssertTrue(_count > 0, @"No pizza locations returned for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssertTrue(_count >= 10, @"No pizza locations returned for \"%s\"", __PRETTY_FUNCTION__); // typically 30
 }
 
 -(void)addAnnotation:(id)anObject {
-    NSLog(@"%s %d", __PRETTY_FUNCTION__, __LINE__);
+    NSLog(@"%s %d %d", __PRETTY_FUNCTION__, __LINE__, _count);
     _count++;
 }
 
